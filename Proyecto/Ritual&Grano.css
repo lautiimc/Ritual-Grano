@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400&display=swap');
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F9F9;
+    margin: 0;
+}
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #3A2F28;
+    text-decoration: none;
+}
+
+.barra{
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+    padding: 16px;
+    align-items:center;
+    padding: 16px 80px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.barra ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.barra ul li{
+    list-style: none;
+}
+
+.barra-link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    color: #847474;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.ritual-diario h2{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: clamp(2.8rem, 7vw, 6rem);
+    color: #2d2d2d;
+    margin-top: 80px;
+}
+.ritual-diario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #F9F6F0;
+    width: 100%;
+    padding-top: 70px;
+}
+.ritual-diario p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #807c7c;
+    text-decoration: none;
+    margin-bottom: 0px;
+    
+}
+
+.boton-exp {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #a67c52;
+    border: 8px;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 90px;
+}
+
+.exp-link {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.eco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #F9F9f9;
+    padding: 80px 80px;
+    width: 100%;
+    margin: auto;
+}
+.eco-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 25%;
+    
+}
+.eco-text-p {
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    color: #747474;
+    text-decoration: none;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+}
+.eco-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.eco-text-ref {
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    color: #747474;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.eco-img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border: 1rem;
+    border-radius: 1rem;
+}
+
+.tres-caminos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #F9F9f9;
+    padding: 80px 80px;
+}
+.tres-caminos-art {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+.tres-caminos-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    max-width: 400px;
+}
+.tres-caminos h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #2d2d2d;
+    text-decoration: none;
+    
+}
+.tres-caminos-tar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: -50px;
+}
+.cultura-grano-text {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 50%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    width: 100%;
+
+}
+.cultura-grano-text p{
+    font-family: 'Inter', sans-serif;
+}
+.cultura-grano {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: #c08e63;
+    padding: 80px 80px;
+}
+.p1-culygrano {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: -13px;
+}
+.img-cultura-grano {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 16px;
+    border-radius: 16px;
+    max-width: 600px;
+}
+.deja-las-prisas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #F9F9f9;
+    padding: 80px;
+    margin-bottom: 8rem;
+    position: relative;
+}
+
+.deja-las-prisas img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 16px;
+    border-radius: 16px;
+}
+.deja-las-prisas p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 6vw, 4rem);
+    color: #F9F9f9;
+    text-decoration: none;
+    text-align: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+footer {
+    background-color: #F9F6F0;
+    padding: 30px;
+}
+.final-de-pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #3A2F28;
+    font-family: 'inter', sans-serif;
+}
+.direccion-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    color: #3A2F28;
+}
+.derechos-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    color: #3A2F28;
+}
+
+.titulo-final {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    text-decoration: none;
+    list-style: none;
+    color: #3A2F28;
+}
+
+
+@media (max-width: 768px) {
+    .barra {
+        flex-direction: column;
+        padding: 16px 20px;
+    }
+
+    .barra ul {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .eco,
+    .tres-caminos,
+    .cultura-grano,
+    .deja-las-prisas {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
