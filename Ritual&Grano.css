@@ -30,23 +30,28 @@ body {
     width: 100%;
 }
 
-.barra ul{
+.container-fluid{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 25px;
 }
 
-.barra ul li{
-    list-style: none;
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 25px;
+    gap: 10px;
+    background-color: #f9f9f9;
 }
 
-.barra-link{
+
+.nav-link{
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(0.8rem, 1vw, 1.2rem);
     color: #847474;
-    text-decoration: none;
 }
 
 header {
