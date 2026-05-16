@@ -313,22 +313,66 @@ footer {
 }
 
 
-@media (max-width: 768px) {
-    .barra {
+@media (max-width: 900px) {
+    .eco {
         flex-direction: column;
-        padding: 16px 20px;
+        padding: 40px 20px;
+    }
+    .eco-text {
+        max-width: 75%;
+        text-align: center;
+        align-items: center;
+    }
+    .eco-text-ref {
+        font-size: 0.875rem;
     }
 
-    .barra ul {
-        flex-wrap: wrap;
-        gap: 12px;
+    .tres-caminos {
+        flex-direction: column;
+        padding: 40px 20px;
     }
 
-    .eco,
-    .tres-caminos,
-    .cultura-grano,
-    .deja-las-prisas {
-        padding-left: 20px;
-        padding-right: 20px;
+    .tres-caminos h3 {
+        font-size: 2rem;
+        margin: 0px;
+    }
+
+    .tres-caminos-art {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+    }
+    .tres-caminos-tar {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 50px;
+    }
+    .cultura-grano {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .cultura-grano-text {
+        max-width: 100%;
+    }
+    .deja-las-prisas{
+        max-width: 100%;
+        padding: 0px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .final-de-pagina {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .derechos-reservados {
+        font-size: 0.750rem;
+    }
+
+    .titulo-final {
+        font-size: 1.1rem;
     }
 }
