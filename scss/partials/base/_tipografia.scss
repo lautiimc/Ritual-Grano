@@ -1,0 +1,20 @@
+// Tipografia desde google fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400&display=swap');
+
+// esatilos base de las etiquetas de texto
+ h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+p { 
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+}

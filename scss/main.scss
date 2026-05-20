@@ -1,0 +1,9 @@
+// BASE
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+//LAYOUT
+@use "./partials/layout/index";
+@use "./partials/layout/la-experiencia";
+@use "./partials/layout/sobre-nosotros";
+@use "./partials/layout/contacto";

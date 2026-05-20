@@ -1,0 +1,5 @@
+@use "../utilities/mixin";
+
+.card {
+    @include mixin.flex(column, center, center);
+}
