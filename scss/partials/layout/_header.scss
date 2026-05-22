@@ -1,6 +1,7 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
 
+// Marca del sitio dentro de la navegacion.
 .titulo {
     font-family: variables.$font-title;
     font-size: clamp(1.5rem, 3vw, 2rem);
@@ -8,6 +9,7 @@
     text-decoration: none;
 }
 
+// Barra de navegacion personalizada.
 .barra {
     @include mixin.flex(row, space-between, center);
     padding: 16px 80px;
@@ -15,10 +17,12 @@
     width: 100%;
 }
 
+// Contenedor de Bootstrap ajustado para centrar el menu.
 .container-fluid {
     @include mixin.flex(row, center, center);
 }
 
+// Lista de enlaces del menu.
 .navbar-nav {
     @include mixin.flex(column, center, center);
     position: fixed;
@@ -27,11 +31,13 @@
     background-color: variables.$color-bg;
 }
 
+// Links principales de navegacion.
 .nav-link {
     font-family: variables.$font-title;
     color: variables.$color-nav;
 }
 
+// Header fijo en la parte superior.
 header {
     position: fixed;
     top: 0;

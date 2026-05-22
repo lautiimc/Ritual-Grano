@@ -1,5 +1,6 @@
 @use "variables";
 
+// Base compartida para botones principales.
 %button-base {
     font-family: variables.$font-title;
     font-style: italic;
@@ -12,16 +13,19 @@
     margin-bottom: 90px;
 }
 
+// Alias del boton cafe para mantener el nombre del concepto.
 %button-cafe {
     @extend %button-base;
 }
 
+// Base para tarjetas con padding y borde redondeado.
 %card-base {
     padding: 20px;
     border-radius: variables.$radius-md;
     text-align: center;
 }
 
+// Texto pequeno destacado, usado como etiqueta visual.
 %eyebrow-text {
     font-family: variables.$font-body;
     font-size: 1rem;
@@ -31,12 +35,14 @@
     margin-bottom: 0;
 }
 
+// Texto comun del footer.
 %footer-text {
     font-family: variables.$font-body;
     font-size: clamp(0.8rem, 1vw, 1.2rem);
     color: variables.$color-brand;
 }
 
+// Texto sobre imagenes o fondos.
 %overlay-text {
     font-family: variables.$font-title;
     color: variables.$color-white;

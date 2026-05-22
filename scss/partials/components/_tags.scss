@@ -1,10 +1,12 @@
 @use "../utilities/extend";
 @use "../utilities/variables";
 
+// Etiqueta pequena de la seccion "El refugio".
 .eco-text-ref {
     @extend %eyebrow-text;
 }
 
+// Etiqueta pequena de la seccion "Cultura grano".
 .p1-culygrano {
     @extend %eyebrow-text;
     font-family: variables.$font-title;
@@ -13,6 +15,7 @@
     margin-bottom: -13px;
 }
 
+// Nombre de la persona que deja un comentario.
 .nombre-comentario {
     font-family: variables.$font-title;
     font-size: clamp(0.875rem, 2.5vw, 1.25rem);

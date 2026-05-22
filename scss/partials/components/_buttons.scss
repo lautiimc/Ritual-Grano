@@ -1,10 +1,12 @@
 @use "../utilities/extend";
 @use "../utilities/variables";
 
+// Boton principal de llamada a la accion.
 .boton-exp {
     @extend %button-base;
 }
 
+// Link interno del boton principal.
 .exp-link {
     color: variables.$color-white;
     text-decoration: none;

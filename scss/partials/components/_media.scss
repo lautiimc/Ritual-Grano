@@ -1,33 +1,40 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
 
+// Imagen principal de la seccion "El refugio".
 .eco-img {
     @include mixin.fluid-image(650px, 1rem, 1rem);
 }
 
+// Imagenes de los accesos a paginas internas.
 .tres-caminos-img {
     @include mixin.fluid-image(400px);
 }
 
+// Imagen de la seccion "Cultura grano".
 .img-cultura-grano {
     @include mixin.fluid-image(600px, variables.$radius-md, variables.$radius-md);
 }
 
+// Imagen panoramica del cierre de inicio.
 .deja-las-prisas img {
     @include mixin.fluid-image(null, variables.$radius-md, variables.$radius-md);
 }
 
+// Imagen hero de la pagina La Experiencia.
 .cafe-refugio-img {
     width: 100%;
     height: auto;
 }
 
+// Imagenes reutilizadas en cards y atmosfera.
 .tarjeta-cafe-img,
 .atmo-img-general,
 .atmo-img-molienda {
     @include mixin.fluid-image();
 }
 
+// Separacion inferior para imagenes de cards.
 .tarjeta-cafe-img {
     margin-bottom: 32px;
 }

@@ -2,17 +2,20 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
 
+// Fondo y espacio del pie de pagina.
 footer {
     background-color: variables.$color-cream;
     padding: 30px;
 }
 
+// Contenedor principal del footer.
 .final-de-pagina {
     @include mixin.flex(row, space-between, center);
     color: variables.$color-brand;
     font-family: variables.$font-body;
 }
 
+// Textos internos del footer y variantes usadas en HTML.
 .direccion-final,
 .derechos-final,
 .derechos-reservados,
@@ -21,6 +24,7 @@ footer {
     @extend %footer-text;
 }
 
+// Logo textual del footer.
 .titulo-final {
     font-family: variables.$font-title;
     font-size: clamp(1rem, 1.5vw, 2.5rem);
@@ -29,6 +33,7 @@ footer {
     color: variables.$color-brand;
 }
 
+// Ajustes del footer en pantallas chicas.
 @include mixin.mobile {
     .final-de-pagina {
         display: flex;

@@ -1,8 +1,10 @@
-// Fonts
+// Variables reutilizables para mantener colores, fuentes y medidas en un solo lugar.
+
+// Fuentes principales del proyecto.
 $font-title: 'Montserrat', sans-serif;
 $font-body: 'Inter', sans-serif;
 
-// Colors
+// Paleta de colores del sitio.
 $color-white: #ffffff;
 $color-bg: #f9f9f9;
 $color-cream: #f9f6f0;
@@ -19,14 +21,14 @@ $color-black: #000000;
 $color-dark-soft: #2e2d2d;
 $color-hero-copy: #807c7c;
 
-// Layout
+// Medidas comunes para bordes, espacios y responsive.
 $radius-sm: 8px;
 $radius-md: 16px;
 $section-padding: 80px;
 $section-padding-mobile: 40px 20px;
 $breakpoint-mobile: 900px;
 
-// Existing aliases
+// Alias viejos: se mantienen para no romper codigo anterior.
 $primary-color-blanco: $color-white;
 $secondary-color-blanco: $color-bg;
 $terciary-color-blanco: $color-cream;

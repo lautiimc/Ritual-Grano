@@ -1,5 +1,6 @@
 @use "variables";
 
+// Atajo para crear contenedores flexibles.
 @mixin flex($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
@@ -7,12 +8,14 @@
     align-items: $align;
 }
 
+// Media query principal para pantallas chicas.
 @mixin mobile {
     @media (max-width: variables.$breakpoint-mobile) {
         @content;
     }
 }
 
+// Grilla responsive para cards y comentarios.
 @mixin auto-grid($min: 250px, $max: 350px, $gap: 15px, $justify: space-evenly) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($min, $max));
@@ -22,6 +25,7 @@
     height: auto;
 }
 
+// Imagen fluida con radio, borde y max-width opcionales.
 @mixin fluid-image($max-width: null, $radius: variables.$radius-md, $border: null, $display: block) {
     display: $display;
     width: 100%;
@@ -37,6 +41,7 @@
     }
 }
 
+// Centra un elemento absoluto sobre su contenedor.
 @mixin absolute-center {
     position: absolute;
     top: 50%;
@@ -44,6 +49,7 @@
     transform: translate(-50%, -50%);
 }
 
+// Padding de seccion con ajuste automatico en mobile.
 @mixin section-padding($padding: variables.$section-padding) {
     padding: $padding $padding;
 

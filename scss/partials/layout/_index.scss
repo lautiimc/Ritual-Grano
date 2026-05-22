@@ -2,6 +2,7 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
 
+// Hero de la pagina de inicio.
 .ritual-diario {
     @include mixin.flex(column, center, center);
     gap: 20px;
@@ -30,6 +31,7 @@
     }
 }
 
+// Seccion introductoria con texto e imagen.
 .eco {
     @include mixin.flex(row, center, center);
     gap: 40px;
@@ -39,6 +41,7 @@
     margin: auto;
 }
 
+// Bloque de texto de la seccion "El refugio".
 .eco-text {
     @include mixin.flex(column, flex-start, flex-start);
     gap: 20px;
@@ -52,6 +55,7 @@
     }
 }
 
+// Parrafo principal de la seccion "El refugio".
 .eco-text-p {
     font-family: variables.$font-body;
     font-size: 1rem;
@@ -60,6 +64,7 @@
     margin-bottom: 0;
 }
 
+// Seccion con tres accesos visuales.
 .tres-caminos {
     @include mixin.flex(column, center, center);
     gap: 40px;
@@ -74,6 +79,7 @@
     }
 }
 
+// Contenedor de las tres imagenes enlazadas.
 .tres-caminos-art {
     @include mixin.flex(row, center, center);
     gap: 20px;
@@ -81,6 +87,7 @@
     padding: 20px;
 }
 
+// Texto superpuesto sobre cada imagen de acceso.
 .tres-caminos-tar {
     display: flex;
     justify-content: center;
@@ -91,6 +98,7 @@
     margin-top: -50px;
 }
 
+// Seccion informativa sobre la molienda del cafe.
 .cultura-grano {
     @include mixin.flex(row, center, center);
     gap: 80px;
@@ -98,6 +106,7 @@
     @include mixin.section-padding();
 }
 
+// Texto de la seccion "Cultura grano".
 .cultura-grano-text {
     @include mixin.flex(column, center, flex-start);
     font-family: variables.$font-title;
@@ -112,6 +121,7 @@
     }
 }
 
+// Imagen final con frase superpuesta.
 .deja-las-prisas {
     @include mixin.flex(column, center, center);
     gap: 20px;
@@ -128,6 +138,7 @@
     }
 }
 
+// Responsive de la pagina de inicio.
 @include mixin.mobile {
     .eco {
         flex-direction: column;

@@ -2,16 +2,19 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
 
+// Card generica para futuros componentes.
 .card {
     @include mixin.flex(column, center, center);
 }
 
+// Grillas reutilizables para cards de productos y comentarios.
 .tarjetas-art,
 .comentarios {
     @include mixin.auto-grid();
     border-radius: variables.$radius-md;
 }
 
+// Card de cada cafe en la pagina La Experiencia.
 .tarjeta-cafe {
     @extend %card-base;
     background-color: variables.$color-card;
@@ -32,6 +35,7 @@
     }
 }
 
+// Card de comentarios de clientes.
 .comentarios-txt {
     @extend %card-base;
     background-color: variables.$color-comment-card;

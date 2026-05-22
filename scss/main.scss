@@ -1,14 +1,16 @@
-// BASE
+// Archivo principal de Sass: conecta todos los parciales.
+
+// BASE: reset y tipografias generales.
 @use "./partials/base/reset";
 @use "./partials/base/tipografia";
 
-// COMPONENTS
+// COMPONENTS: piezas reutilizables del sitio.
 @use "./partials/components/buttons";
 @use "./partials/components/cards";
 @use "./partials/components/tags";
 @use "./partials/components/media";
 
-// LAYOUT
+// LAYOUT: estructura de cada pagina o zona principal.
 @use "./partials/layout/header";
 @use "./partials/layout/index";
 @use "./partials/layout/la-experiencia";

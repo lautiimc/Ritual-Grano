@@ -1,21 +1,23 @@
 @use "../utilities/variables";
 
-// Tipografia desde google fonts
+// Tipografias importadas desde Google Fonts.
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400&display=swap');
 
-// Estilos base de las etiquetas de texto
+// Titulos secundarios del sitio.
 h2 {
     font-family: variables.$font-title;
     font-weight: 700;
     font-size: 2.5rem;
 }
 
+// Titulos de bloques y cards.
 h3 {
     font-family: variables.$font-title;
     font-size: 2rem;
 }
 
+// Texto general de parrafos.
 p { 
     font-family: variables.$font-body;
     font-size: 1rem;
