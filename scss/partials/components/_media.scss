@@ -1,0 +1,33 @@
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+.eco-img {
+    @include mixin.fluid-image(650px, 1rem, 1rem);
+}
+
+.tres-caminos-img {
+    @include mixin.fluid-image(400px);
+}
+
+.img-cultura-grano {
+    @include mixin.fluid-image(600px, variables.$radius-md, variables.$radius-md);
+}
+
+.deja-las-prisas img {
+    @include mixin.fluid-image(null, variables.$radius-md, variables.$radius-md);
+}
+
+.cafe-refugio-img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta-cafe-img,
+.atmo-img-general,
+.atmo-img-molienda {
+    @include mixin.fluid-image();
+}
+
+.tarjeta-cafe-img {
+    margin-bottom: 32px;
+}

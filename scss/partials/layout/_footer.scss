@@ -1,0 +1,46 @@
+@use "../utilities/extend";
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+footer {
+    background-color: variables.$color-cream;
+    padding: 30px;
+}
+
+.final-de-pagina {
+    @include mixin.flex(row, space-between, center);
+    color: variables.$color-brand;
+    font-family: variables.$font-body;
+}
+
+.direccion-final,
+.derechos-final,
+.derechos-reservados,
+.derechos.reservados {
+    @include mixin.flex(column, center, center);
+    @extend %footer-text;
+}
+
+.titulo-final {
+    font-family: variables.$font-title;
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+    text-decoration: none;
+    list-style: none;
+    color: variables.$color-brand;
+}
+
+@include mixin.mobile {
+    .final-de-pagina {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .derechos-reservados,
+    .derechos.reservados {
+        font-size: 0.750rem;
+    }
+
+    .titulo-final {
+        font-size: 1.1rem;
+    }
+}

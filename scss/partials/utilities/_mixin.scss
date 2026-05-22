@@ -1,6 +1,53 @@
-@mixin flex ($direction, $justify, $align) {
+@use "variables";
+
+@mixin flex($direction, $justify, $align) {
     display: flex;
-     flex-direction: $direction;
-     justify-content: $justify;
-     align-items: $align;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin mobile {
+    @media (max-width: variables.$breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin auto-grid($min: 250px, $max: 350px, $gap: 15px, $justify: space-evenly) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min, $max));
+    gap: $gap;
+    justify-content: $justify;
+    width: 100%;
+    height: auto;
+}
+
+@mixin fluid-image($max-width: null, $radius: variables.$radius-md, $border: null, $display: block) {
+    display: $display;
+    width: 100%;
+    height: auto;
+    border-radius: $radius;
+
+    @if $border != null {
+        border: $border;
+    }
+
+    @if $max-width != null {
+        max-width: $max-width;
+    }
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin section-padding($padding: variables.$section-padding) {
+    padding: $padding $padding;
+
+    @include mobile {
+        padding: variables.$section-padding-mobile;
+    }
 }

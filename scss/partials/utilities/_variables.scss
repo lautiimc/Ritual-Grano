@@ -1,15 +1,40 @@
-// Variables de colores
+// Fonts
+$font-title: 'Montserrat', sans-serif;
+$font-body: 'Inter', sans-serif;
 
-$primary-color-blanco: #ffffff;
-$secondary-color-blanco: #f9f9f9;
-$terciary-color-blanco: #f9f6f0;
+// Colors
+$color-white: #ffffff;
+$color-bg: #f9f9f9;
+$color-cream: #f9f6f0;
+$color-brand: #3A2F28;
+$color-text: #2d2d2d;
+$color-muted: #747474;
+$color-nav: #847474;
+$color-accent: #c08e63;
+$color-button: #a67c52;
+$color-card: #f1eadb;
+$color-comment-card: #f3e9d4cb;
+$color-border-soft: #a59f9f;
+$color-black: #000000;
+$color-dark-soft: #2e2d2d;
+$color-hero-copy: #807c7c;
 
-$primary-color-gris: #2d2d2d;
-$secondary-color-gris: #847474;
-$tertiary-color-gris: #747474;
+// Layout
+$radius-sm: 8px;
+$radius-md: 16px;
+$section-padding: 80px;
+$section-padding-mobile: 40px 20px;
+$breakpoint-mobile: 900px;
 
-$primary-color-cafe: #3A2F28;
-$secondary-color-cafe: #c08e63;
-
-$primary-color-negro: #000000;
-$secondary-color-negro: #2e2d2d;
+// Existing aliases
+$primary-color-blanco: $color-white;
+$secondary-color-blanco: $color-bg;
+$terciary-color-blanco: $color-cream;
+$tertiary-color-blanco: $color-cream;
+$primary-color-gris: $color-text;
+$secondary-color-gris: $color-nav;
+$tertiary-color-gris: $color-muted;
+$primary-color-cafe: $color-brand;
+$secondary-color-cafe: $color-accent;
+$primary-color-negro: $color-black;
+$secondary-color-negro: $color-dark-soft;

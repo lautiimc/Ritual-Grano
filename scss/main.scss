@@ -2,8 +2,16 @@
 @use "./partials/base/reset";
 @use "./partials/base/tipografia";
 
-//LAYOUT
+// COMPONENTS
+@use "./partials/components/buttons";
+@use "./partials/components/cards";
+@use "./partials/components/tags";
+@use "./partials/components/media";
+
+// LAYOUT
+@use "./partials/layout/header";
 @use "./partials/layout/index";
 @use "./partials/layout/la-experiencia";
 @use "./partials/layout/sobre-nosotros";
 @use "./partials/layout/contacto";
+@use "./partials/layout/footer";

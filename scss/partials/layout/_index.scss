@@ -1,3 +1,183 @@
-@use "../utilities/variables";
 @use "../utilities/extend";
+@use "../utilities/mixin";
+@use "../utilities/variables";
 
+.ritual-diario {
+    @include mixin.flex(column, center, center);
+    gap: 20px;
+    background-color: variables.$color-cream;
+    width: 100%;
+    padding-top: 70px;
+
+    h2 {
+        display: flex;
+        font-family: variables.$font-title;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: clamp(2.8rem, 7vw, 6rem);
+        color: variables.$color-text;
+        margin-top: 80px;
+    }
+
+    p {
+        font-family: variables.$font-title;
+        font-size: 16px;
+        font-style: italic;
+        color: variables.$color-hero-copy;
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+}
+
+.eco {
+    @include mixin.flex(row, center, center);
+    gap: 40px;
+    background-color: variables.$color-bg;
+    @include mixin.section-padding();
+    width: 100%;
+    margin: auto;
+}
+
+.eco-text {
+    @include mixin.flex(column, flex-start, flex-start);
+    gap: 20px;
+    max-width: 25%;
+
+    h3 {
+        font-family: variables.$font-title;
+        font-size: 2rem;
+        color: variables.$color-text;
+        text-decoration: none;
+    }
+}
+
+.eco-text-p {
+    font-family: variables.$font-body;
+    font-size: 1rem;
+    color: variables.$color-muted;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.tres-caminos {
+    @include mixin.flex(column, center, center);
+    gap: 40px;
+    background-color: variables.$color-bg;
+    @include mixin.section-padding();
+
+    h3 {
+        font-family: variables.$font-title;
+        font-size: 48px;
+        color: variables.$color-text;
+        text-decoration: none;
+    }
+}
+
+.tres-caminos-art {
+    @include mixin.flex(row, center, center);
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.tres-caminos-tar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: variables.$font-title;
+    font-size: 17px;
+    color: variables.$color-white;
+    margin-top: -50px;
+}
+
+.cultura-grano {
+    @include mixin.flex(row, center, center);
+    gap: 80px;
+    background-color: variables.$color-accent;
+    @include mixin.section-padding();
+}
+
+.cultura-grano-text {
+    @include mixin.flex(column, center, flex-start);
+    font-family: variables.$font-title;
+    color: variables.$color-white;
+    gap: 20px;
+    max-width: 50%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    width: 100%;
+
+    p {
+        font-family: variables.$font-body;
+    }
+}
+
+.deja-las-prisas {
+    @include mixin.flex(column, center, center);
+    gap: 20px;
+    background-color: variables.$color-bg;
+    padding: variables.$section-padding;
+    margin-bottom: 8rem;
+    position: relative;
+
+    p {
+        @include mixin.absolute-center;
+        @extend %overlay-text;
+        font-size: clamp(1rem, 6vw, 4rem);
+        color: variables.$color-bg;
+    }
+}
+
+@include mixin.mobile {
+    .eco {
+        flex-direction: column;
+    }
+
+    .eco-text {
+        max-width: 75%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .eco-text-ref {
+        font-size: 0.875rem;
+    }
+
+    .tres-caminos {
+        flex-direction: column;
+
+        h3 {
+            font-size: 2rem;
+            margin: 0;
+        }
+    }
+
+    .tres-caminos-art {
+        display: flex;
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .tres-caminos-tar {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 50px;
+    }
+
+    .cultura-grano {
+        flex-direction: column;
+    }
+
+    .cultura-grano-text {
+        max-width: 100%;
+    }
+
+    .deja-las-prisas {
+        max-width: 100%;
+        padding: 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}

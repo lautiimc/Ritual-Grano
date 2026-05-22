@@ -1,0 +1,25 @@
+@use "../utilities/extend";
+@use "../utilities/variables";
+
+.eco-text-ref {
+    @extend %eyebrow-text;
+}
+
+.p1-culygrano {
+    @extend %eyebrow-text;
+    font-family: variables.$font-title;
+    font-size: 13px;
+    color: variables.$color-white;
+    margin-bottom: -13px;
+}
+
+.nombre-comentario {
+    font-family: variables.$font-title;
+    font-size: clamp(0.875rem, 2.5vw, 1.25rem);
+    color: variables.$color-text;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    border-top: 1px solid variables.$color-border-soft;
+    padding-top: 10px;
+}

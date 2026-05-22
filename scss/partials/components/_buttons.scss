@@ -1,0 +1,11 @@
+@use "../utilities/extend";
+@use "../utilities/variables";
+
+.boton-exp {
+    @extend %button-base;
+}
+
+.exp-link {
+    color: variables.$color-white;
+    text-decoration: none;
+}

@@ -1,5 +1,41 @@
+@use "../utilities/extend";
 @use "../utilities/mixin";
+@use "../utilities/variables";
 
 .card {
     @include mixin.flex(column, center, center);
+}
+
+.tarjetas-art,
+.comentarios {
+    @include mixin.auto-grid();
+    border-radius: variables.$radius-md;
+}
+
+.tarjeta-cafe {
+    @extend %card-base;
+    background-color: variables.$color-card;
+
+    h3 {
+        font-family: variables.$font-title;
+        font-size: 1.5rem;
+        color: variables.$color-text;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: variables.$font-body;
+        font-size: 1rem;
+        color: variables.$color-muted;
+        text-decoration: none;
+    }
+}
+
+.comentarios-txt {
+    @extend %card-base;
+    background-color: variables.$color-comment-card;
+    border-radius: variables.$radius-sm;
+    text-align: start;
+    font-size: clamp(0.8rem, 2.5vw, 1.25rem);
 }
