@@ -1,2 +1,128 @@
-// Pagina Sobre nosotros.
-// Por ahora no tiene estilos especificos en el CSS fuente.
+@use "../utilities/extend";
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+
+// Introduccion principal de la pagina Sobre Nosotros.
+.introduccion-historia {
+    @include mixin.flex(column, center, center);
+    padding: 80px 20px;
+
+    p {
+        color: variables.$color-accent;
+        font-family: variables.$font-title;
+        margin-bottom: 30px;
+        font-size: clamp(0.5rem, 4vw, 1.2rem);
+    }
+    h3 {
+        color: variables.$color-text;
+        font-family: variables.$font-body;
+        font-size: clamp(1.2rem, 3vw, 5rem);
+        text-align: center;
+        max-width: 60%;
+    }
+}
+
+// Bloque con los conceptos "El Ritual" y "El Grano".
+.conceptos-principales {
+    @include mixin.flex(row, center, center);
+    gap: 10%;
+    background-color: variables.$color-cream;
+    padding: 80px 20px;
+
+    .ritual-grano {
+        @include mixin.flex(column, center, center);
+        gap: 15px;
+        max-width: 400px;
+        text-align: center;
+
+        img {
+            @include mixin.fluid-image(400px);
+        }
+
+        h3 {
+            color: variables.$color-text;
+            font-family: variables.$font-title;
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+        }
+
+        p {
+            color: variables.$color-muted;
+            font-family: variables.$font-body;
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+        }
+    }
+}
+
+// Seccion con los valores de la cafeteria.
+.valores-cafeteria {
+    @include mixin.flex(column, center, center);
+    gap: 40px;
+    background-color: variables.$color-bg;
+    padding: 80px 20px;
+
+    h2 {
+        color: variables.$color-text;
+        font-family: variables.$font-title;
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    // Fila que agrupa las cards de valores.
+    .linea-separadora {
+        @include mixin.flex(row, center, center);
+        gap: 30px;
+    }
+}
+
+// Imagen panoramica de cierre con texto superpuesto.
+.imagen-cierre {
+    @include mixin.flex(column, center, center);
+    width: 100%;
+    padding: 80px 0px;
+    position: relative;
+
+    img {
+        @include mixin.fluid-image(100%);
+        border-radius: 0px;
+    }
+
+    p {
+        @include mixin.absolute-center;
+        color: variables.$color-white;
+        font-family: variables.$font-title;
+        font-size: clamp(1rem, 3vw, 3rem);
+        text-align: center;
+        max-width: 40%;
+    }
+}
+
+// Responsive de la pagina Sobre Nosotros.
+@include mixin.mobile {
+    .introduccion-historia {
+        h3 {
+            max-width: 80%;
+        }
+    }
+
+    .conceptos-principales {
+        flex-direction: column;
+        gap: 40px;
+
+        .ritual-grano {
+            max-width: 100%;
+        }
+    }
+
+    .valores-cafeteria {
+        padding: 40px 20px;
+        flex-direction: column;
+
+        .linea-separadora {
+            flex-direction: column;
+        }
+    }
+
+    .imagen-cierre {
+        padding: 0px;
+    }
+}

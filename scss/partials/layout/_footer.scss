@@ -39,6 +39,12 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .direccion-final {
+        p {
+            font-size: 0.875rem;
+            margin: 0px;
+        }
+    }
 
     .derechos-reservados,
     .derechos.reservados {
@@ -46,6 +52,6 @@ footer {
     }
 
     .titulo-final {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
