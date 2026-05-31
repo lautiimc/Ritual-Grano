@@ -1,2 +1,134 @@
-// Pagina Contacto.
-// Por ahora no tiene estilos especificos en el CSS fuente.
+@use "../utilities/extend";
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+
+.contacto {
+    @include mixin.flex(row, center, center);
+    gap: 50px;
+    padding: 50px;
+
+    .imagen-contacto {
+        width: auto;
+        height: auto;
+        border-radius: variables.$radius-md;
+    }
+
+}
+
+.formulario {
+    @include mixin.flex(column, center, start);
+    gap: 20px;
+    background-color: variables.$color-white;
+    padding: 50px;
+    border-radius: variables.$radius-md;
+    max-width: 100%;
+
+     h1 {
+        font-family: variables.$font-title;
+        font-size: clamp(1.5rem, 5vw, 3rem);
+     }
+
+     p {
+        font-family: variables.$font-body;
+        font-size: clamp(0.5rem, 3vw, 1rem);
+     }
+    .input-text {
+    width: 100%;
+    }
+
+    .boton-contacto {
+        @extend %button-base;
+        width: 100%;
+        margin: 0;
+        &:hover {
+            background-color: #7c5635;
+        }
+    }
+
+}
+
+.tags-contacto {
+ @include mixin.flex(row, center, center);
+    gap: 20px;
+    padding: 15px 0px;
+
+    .direccion, .horarios, .contactanos {
+        @extend %card-base;
+        background-color: variables.$color-white;
+        padding: 20px;
+        text-align: left;
+        height: 150px;
+        width: 100%;
+
+        flex: 1;
+
+        h5 {
+            font-family: variables.$font-title;
+            font-size: 1.5rem;
+            color: variables.$color-text;
+            margin-bottom: 10px;
+        }
+
+        h6 {
+            font-family: variables.$font-title;
+            font-size: 1rem;
+            color: variables.$color-black;
+            margin-bottom: 5px;
+        }
+
+        p, a, input{
+            font-family: variables.$font-body;
+            font-size:clamp(0.4rem, 3vw, 1rem);
+            color: variables.$color-muted;
+            text-decoration: none;
+        }
+        
+    }
+    .links-contacto {
+        @include mixin.flex(row, left, center);
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: variables.$breakpoint-mobile) {
+    .link-redes {
+        max-width: 25px;
+        max-height: 25px;
+        padding: 8px;
+    }
+
+    .contacto {
+        flex-direction: column-reverse; 
+        padding: 20px;
+    }
+
+    .formulario {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .imagen-contacto {
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .horarios, .contactanos, .direccion {
+        height: auto;
+        p {
+            
+        }
+    }
+
+     .tags-contacto {
+        flex-direction: row;
+        gap: 5px;
+            .direccion, .horarios, .contactanos {
+                padding: 10px;
+                width: 100%;
+            }
+    }
+    
+}
+

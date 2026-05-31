@@ -52,17 +52,14 @@
     background-color: #ffffff;
     padding: 40px 20px;
 
-    h5 {
+    h5{
         font-family: variables.$font-title;
         font-size: 2rem;
-        padding: 10px;
-        color: variables.$color-text;
-        background-color: variables.$color-card;
-        border-radius: 100%;
-        max-width: 60px;
-        max-height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        @extend %aureola-icon;
+    }    
+}
+
+.logo-contacto {
+    @extend %aureola-icon;
+        margin-bottom: 12px;
 }
