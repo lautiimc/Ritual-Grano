@@ -1,5 +1,6 @@
 @use "../utilities/mixin";
 @use "../utilities/variables";
+@use "../utilities/extend";
 
 // Imagen principal de la seccion "El refugio".
 .eco-img {
@@ -37,4 +38,10 @@
 // Separacion inferior para imagenes de cards.
 .tarjeta-cafe-img {
     margin-bottom: 32px;
+}
+
+// Iconos decorativos de las tarjetas de contacto.
+.logo-contacto {
+    @extend %aureola-icon;
+    margin-bottom: 12px;
 }

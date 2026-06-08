@@ -63,13 +63,6 @@
 
         flex: 1;
 
-        h5 {
-            font-family: variables.$font-title;
-            font-size: 1.5rem;
-            color: variables.$color-text;
-            margin-bottom: 10px;
-        }
-
         h6 {
             font-family: variables.$font-title;
             font-size: 1rem;
@@ -86,7 +79,7 @@
         
     }
     .links-contacto {
-        @include mixin.flex(row, left, center);
+        @include mixin.flex(row, flex-start, center);
         gap: 10px;
         margin-top: 10px;
     }
@@ -116,9 +109,6 @@
     
     .horarios, .contactanos, .direccion {
         height: auto;
-        p {
-            
-        }
     }
 
      .tags-contacto {
@@ -131,4 +121,3 @@
     }
     
 }
-
