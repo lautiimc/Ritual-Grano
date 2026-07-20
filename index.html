@@ -4,12 +4,14 @@
     <!-- Configuracion basica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta> name="description" content="Ritual & Grano: El arte de la pausa en el centro de la ciudad. Descubre nuestra experiencia única de café de especialidad, donde cada taza es un ritual que despierta tus sentidos. Ubicados en Rosario, te invitamos a conectar con lo esencial a través de nuestro café cuidadosamente seleccionado y preparado. Bienvenido a tu nuevo refugio urbano.">
-    <meta> name="keywords" content="ritual y grano, Café de especialidad, cafetería en Rosario, experiencia de café, ritual del café, pausa urbana, café cuidadosamente seleccionado, cultura del café, café artesanal">
+    <meta name="description" content="Ritual & Grano: El arte de la pausa en el centro de la ciudad. Descubre nuestra experiencia única de café de especialidad, donde cada taza es un ritual que despierta tus sentidos. Ubicados en Rosario, te invitamos a conectar con lo esencial a través de nuestro café cuidadosamente seleccionado y preparado. Bienvenido a tu nuevo refugio urbano.">
+    <meta name="keywords" content="ritual y grano, Café de especialidad, cafetería en Rosario, experiencia de café, ritual del café, pausa urbana, café cuidadosamente seleccionado, cultura del café, café artesanal">
     <title>Ritual & Grano</title>
 
     <!-- Bootstrap y estilos propios compilados desde SCSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -50,36 +52,36 @@
     <main>
         <!-- Hero principal de la pagina de inicio -->
         <section class="ritual-diario">
-            <h2>Tu ritual diario, <br>elevado.</h2>
-            <p>El arte de la pausa en el centro de la ciudad</p>
-            <button class="boton-exp"><a class="exp-link" href="styles/La-experiencia.html">Despertar los sentidos</a></button>
+            <h2 class="animate__animated animate__fadeInUp animacion-lenta">Tu ritual diario, <br>elevado.</h2>
+            <p class="animate__animated animate__fadeInUp animacion-delay-150">El arte de la pausa en el centro de la ciudad</p>
+            <button class="boton-exp animate__animated animate__fadeInUp animacion-delay-300"><a class="exp-link" href="styles/La-experiencia.html">Despertar los sentidos</a></button>
         </section>
 
         <!-- Presentacion breve del concepto de la cafeteria -->
         <section class="eco">
-            <article class="eco-text">
+            <article class="eco-text" data-aos="fade-right">
                 <p class="eco-text-ref">EL REFUGIO</p>
                 <h3>El eco de la primera taza.</h3>
                 <P class="eco-text-p">Creemos que el café no es una simple bebida, es un puente hacia el momento presente. Una pausa deliberada en un mundo que no se detiene. El aroma que te da la bienvenida y el calor en las manos son nuestra invitación a conectar con lo que realmente importa.</P>
             </article>
-            <article class="eco-img">
+            <article class="eco-img" data-aos="fade-left" data-aos-delay="120">
                 <img class="eco-img" src="imagenes/Imagen-cafeteria-general.avif" alt="Cafetería General" width="700" height="auto">
             </article>
         </section>
 
         <!-- Accesos visuales a las paginas internas -->
         <section class="tres-caminos">
-            <h3>Los tres caminos</h3>
+            <h3 data-aos="fade-up">Los tres caminos</h3>
             <div class="tres-caminos-art">
-            <article>
+            <article data-aos="zoom-in">
                 <a href="styles/Sobre-nosotros.html"><img class="tres-caminos-img" src="imagenes/Campo-de-cafe.jpg" alt="Campo de café de especialidad" width="400" height="533"></a>
                 <p class="tres-caminos-tar">Nuestra Historia: Tierra, tiempo y paciencia.</p>
             </article>
-            <article>
+            <article data-aos="zoom-in" data-aos-delay="120">
                 <a href="styles/La-experiencia.html"><img class="tres-caminos-img"  src="imagenes/tres-tazas.jpg" alt="Tres tazas de café" width="400" height="auto"></a>
                 <p class="tres-caminos-tar">La Carta: Alquimia y precisión en tu taza.</p>
             </article>
-            <article>
+            <article data-aos="zoom-in" data-aos-delay="240">
                 <a href="styles/Contacto.html"><img class="tres-caminos-img" src="imagenes/casa-cafe.jpg" alt="Casa de café" width="400" height="auto"></a>
                 <p class="tres-caminos-tar">Nuestra Casa: Tu nuevo refugio en Rosario.</p>
             </article>
@@ -88,20 +90,20 @@
 
         <!-- Bloque informativo sobre el cafe y la molienda -->
         <section class="cultura-grano">
-            <article class="cultura-grano-text">
+            <article class="cultura-grano-text" data-aos="fade-right">
             <p class="p1-culygrano">CULTURA GRANO</p>
             <h3><strong>¿Sabías que...?</strong></h3>
             <p>El 80% de los aromas volátiles del café se desvanecen apenas 15 minutos después de la molienda. Por eso, en Ritual & Grano, nuestro molino solo canta cuando tu taza está lista. Precisión absoluta, magia intacta.</p>
             </article>
-            <article class="cultura-grano-img">
+            <article class="cultura-grano-img" data-aos="fade-left" data-aos-delay="120">
                 <img class="img-cultura-grano" src="imagenes/cafe-molienda.jpg" alt="Café moliendo" width="600" height="auto">
             </article>
         </section>
 
         <!-- Cierre visual de la pagina de inicio -->
-        <section class="deja-las-prisas">
+        <section class="deja-las-prisas" data-aos="zoom-in">
             <img src="imagenes/cafeteria-fondo-2-panoramica.jpg" alt="mesas de cafetería" width="1000" height="auto">
-            <p>Deja las prisas del otro lado de la puerta.</p>
+            <p><span data-aos="fade-up" data-aos-delay="150">Deja las prisas del otro lado de la puerta.</span></p>
         </section>
 
     </main>
@@ -120,6 +122,17 @@
     </footer>
 
     <!-- Script de Bootstrap para el menu responsive -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        if (window.AOS) {
+            AOS.init({
+                duration: 750,
+                easing: "ease-out-cubic",
+                once: true,
+                offset: 90
+            });
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

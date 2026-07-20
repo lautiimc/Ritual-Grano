@@ -77,7 +77,7 @@ p {
   text-align: center;
 }
 
-.link-redes, .logo-estrella h5, .logo-contacto {
+.logo-contacto, .link-redes, .logo-estrella h5 {
   padding: 12px;
   color: #2d2d2d;
   background-color: #f1eadb;
@@ -145,10 +145,6 @@ p {
 .logo-estrella h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-}
-
-.logo-contacto {
-  margin-bottom: 12px;
 }
 
 .p1-culygrano {
@@ -230,6 +226,251 @@ p {
   margin-bottom: 32px;
 }
 
+.logo-contacto {
+  margin-bottom: 12px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.animacion-lenta {
+  animation-duration: 850ms;
+}
+
+.animacion-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animacion-delay-150 {
+  animation-delay: 150ms;
+}
+
+.animacion-delay-250 {
+  animation-delay: 250ms;
+}
+
+.animacion-delay-300 {
+  animation-delay: 300ms;
+}
+
+.deja-las-prisas p span,
+.imagen-cierre p span {
+  display: inline-block;
+}
+
+header {
+  z-index: 1000;
+}
+
+header .navbar {
+  box-shadow: 0 8px 24px rgba(58, 47, 40, 0.045);
+  transition: box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1), background-color 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.titulo {
+  display: inline-block;
+  transition: color 220ms cubic-bezier(0.22, 1, 0.36, 1), transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.titulo:hover, .titulo:focus-visible {
+  color: #a67c52;
+  transform: translateY(-1px);
+}
+
+.nav-link {
+  position: relative;
+  transition: color 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.45rem;
+  right: 0.45rem;
+  bottom: 0.15rem;
+  height: 2px;
+  background-color: #a67c52;
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link:hover, .nav-link:focus-visible, .nav-link.active {
+  color: #2d2d2d;
+}
+.nav-link:hover::after, .nav-link:focus-visible::after, .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+.boton-exp,
+.boton-contacto {
+  border: 0;
+  cursor: pointer;
+  transition: background-color 320ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1), transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.boton-exp:hover, .boton-exp:focus-visible,
+.boton-contacto:hover,
+.boton-contacto:focus-visible {
+  background-color: #8f653f;
+  box-shadow: 0 14px 28px rgba(90, 58, 33, 0.2);
+  transform: translateY(-2px);
+}
+.boton-exp:active,
+.boton-contacto:active {
+  box-shadow: 0 8px 18px rgba(90, 58, 33, 0.16);
+  transform: translateY(-1px);
+}
+
+.tres-caminos-art article {
+  border-radius: 16px;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.tres-caminos-art article a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.tres-caminos-art article a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(45, 45, 45, 0.02), rgba(45, 45, 45, 0.28));
+  opacity: 0;
+  transition: opacity 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tres-caminos-img,
+.tarjeta-cafe-img,
+.eco-img img,
+.img-cultura-grano,
+.atmo-img-general,
+.atmo-img-molienda,
+.imagen-contacto {
+  transition: filter 320ms cubic-bezier(0.22, 1, 0.36, 1), transform 750ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tres-caminos-tar {
+  transition: text-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1), transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tarjeta-cafe,
+.comentarios-txt,
+.logo-estrella,
+.tags-contacto .direccion,
+.tags-contacto .horarios,
+.tags-contacto .contactanos,
+.formulario {
+  transition: box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1), transform 320ms cubic-bezier(0.22, 1, 0.36, 1), background-color 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.tarjeta-cafe {
+  overflow: hidden;
+}
+
+.cafe-refugio {
+  overflow: hidden;
+}
+
+.cafe-refugio-img {
+  animation: imagen-hero-entrada 1200ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  transform-origin: center;
+}
+
+.form-control {
+  transition: border-color 220ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 220ms cubic-bezier(0.22, 1, 0.36, 1), background-color 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.form-control:focus {
+  border-color: #a67c52;
+  box-shadow: 0 0 0 0.18rem rgba(166, 124, 82, 0.18);
+}
+
+.link-redes {
+  transition: background-color 220ms cubic-bezier(0.22, 1, 0.36, 1), transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-redes:hover, .link-redes:focus-visible {
+  background-color: rgba(189, 177, 150, 0.9803921569);
+  transform: scale(1.06);
+}
+
+@media (hover: hover) {
+  .tres-caminos-art article:hover {
+    transform: translateY(-3px);
+  }
+  .tres-caminos-art article:hover a::after {
+    opacity: 1;
+  }
+  .tres-caminos-art article:hover .tres-caminos-img {
+    filter: saturate(1.04) contrast(1.02);
+    transform: scale(1.035);
+  }
+  .tres-caminos-art article:hover .tres-caminos-tar {
+    text-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+    transform: translateY(-4px);
+  }
+  .tarjeta-cafe:hover,
+  .comentarios-txt:hover,
+  .logo-estrella:hover,
+  .tags-contacto .direccion:hover,
+  .tags-contacto .horarios:hover,
+  .tags-contacto .contactanos:hover {
+    box-shadow: 0 18px 38px rgba(58, 47, 40, 0.1);
+    transform: translateY(-3px);
+  }
+  .tarjeta-cafe:hover .tarjeta-cafe-img {
+    filter: saturate(1.04) contrast(1.02);
+    transform: scale(1.025);
+  }
+  .eco-img:hover img,
+  .img-cultura-grano:hover,
+  .atmo-img-general:hover,
+  .atmo-img-molienda:hover,
+  .imagen-contacto:hover {
+    filter: saturate(1.03);
+    transform: scale(1.012);
+  }
+  .logo-estrella:hover h5 {
+    transform: rotate(8deg) scale(1.04);
+  }
+}
+.logo-estrella h5,
+.logo-contacto {
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), background-color 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes imagen-hero-entrada {
+  from {
+    transform: scale(1.025);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (max-width: 900px) {
+  .animacion-delay-100,
+  .animacion-delay-150,
+  .animacion-delay-250,
+  .animacion-delay-300 {
+    animation-delay: 80ms;
+  }
+  [data-aos][data-aos-delay] {
+    transition-delay: 0ms !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
 .titulo {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -270,6 +511,70 @@ p {
   color: #847474;
 }
 
+.navbar-toggler {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(58, 47, 40, 0.14);
+  border-radius: 8px;
+  background-color: #f9f6f0;
+  box-shadow: 0 8px 20px rgba(58, 47, 40, 0.08);
+  transition: background-color 250ms ease, border-color 250ms ease, box-shadow 250ms ease, transform 250ms ease;
+}
+.navbar-toggler:hover {
+  transform: translateY(-1px);
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.18rem rgba(166, 124, 82, 0.18);
+}
+.navbar-toggler[aria-expanded=true] {
+  background-color: #a67c52;
+  border-color: #a67c52;
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+  background-color: transparent;
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon::before, .navbar-toggler[aria-expanded=true] .navbar-toggler-icon::after {
+  background-color: #ffffff;
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon::before {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar-toggler[aria-expanded=true] .navbar-toggler-icon::after {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.navbar-toggler-icon {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #3A2F28;
+  background-image: none;
+  border-radius: 999px;
+  transition: background-color 250ms ease;
+}
+.navbar-toggler-icon::before, .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #3A2F28;
+  border-radius: 999px;
+  transition: background-color 250ms ease, transform 250ms ease;
+}
+.navbar-toggler-icon::before {
+  top: -7px;
+}
+.navbar-toggler-icon::after {
+  top: 7px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -278,6 +583,51 @@ header {
   width: 100%;
 }
 
+@media (max-width: 900px) {
+  .container-fluid {
+    justify-content: space-between;
+    padding: 10px 16px;
+    position: relative;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 16px;
+    right: 16px;
+    z-index: 1001;
+    padding: 12px;
+    background-color: #f9f6f0;
+    border: 1px solid rgba(58, 47, 40, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 18px 38px rgba(58, 47, 40, 0.13);
+  }
+  .navbar-nav {
+    position: static;
+    align-items: stretch;
+    gap: 6px;
+    width: 100%;
+    background-color: transparent;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    padding: 11px 12px;
+    border-radius: 8px;
+    color: #3A2F28;
+    text-align: left;
+  }
+  .nav-link:hover, .nav-link:focus-visible, .nav-link.active {
+    background-color: rgba(166, 124, 82, 0.12);
+  }
+  .nav-link::after {
+    left: 12px;
+    right: auto;
+    bottom: 6px;
+    width: 30px;
+    transform-origin: left;
+  }
+}
 .ritual-diario {
   display: flex;
   flex-direction: column;
@@ -833,12 +1183,6 @@ main {
   width: 100%;
   flex: 1;
 }
-.tags-contacto .direccion h5, .tags-contacto .horarios h5, .tags-contacto .contactanos h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  color: #2d2d2d;
-  margin-bottom: 10px;
-}
 .tags-contacto .direccion h6, .tags-contacto .horarios h6, .tags-contacto .contactanos h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -854,7 +1198,7 @@ main {
 .tags-contacto .links-contacto {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   margin-top: 10px;

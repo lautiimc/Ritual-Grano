@@ -37,6 +37,81 @@
     color: variables.$color-nav;
 }
 
+// Boton hamburguesa del menu mobile.
+.navbar-toggler {
+    @include mixin.flex(row, center, center);
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid rgba(58, 47, 40, 0.14);
+    border-radius: variables.$radius-sm;
+    background-color: variables.$color-cream;
+    box-shadow: 0 8px 20px rgba(58, 47, 40, 0.08);
+    transition: background-color 250ms ease, border-color 250ms ease, box-shadow 250ms ease, transform 250ms ease;
+
+    &:hover {
+        transform: translateY(-1px);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.18rem rgba(166, 124, 82, 0.18);
+    }
+
+    &[aria-expanded="true"] {
+        background-color: variables.$color-button;
+        border-color: variables.$color-button;
+
+        .navbar-toggler-icon {
+            background-color: transparent;
+
+            &::before,
+            &::after {
+                background-color: variables.$color-white;
+            }
+
+            &::before {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            &::after {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+// Lineas del icono hamburguesa.
+.navbar-toggler-icon {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: variables.$color-brand;
+    background-image: none;
+    border-radius: 999px;
+    transition: background-color 250ms ease;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 22px;
+        height: 2px;
+        background-color: variables.$color-brand;
+        border-radius: 999px;
+        transition: background-color 250ms ease, transform 250ms ease;
+    }
+
+    &::before {
+        top: -7px;
+    }
+
+    &::after {
+        top: 7px;
+    }
+}
+
 // Header fijo en la parte superior.
 header {
     position: fixed;
@@ -44,4 +119,58 @@ header {
     left: 0;
     right: 0;
     width: 100%;
+}
+
+@include mixin.mobile {
+    .container-fluid {
+        justify-content: space-between;
+        padding: 10px 16px;
+        position: relative;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 16px;
+        right: 16px;
+        z-index: 1001;
+        padding: 12px;
+        background-color: variables.$color-cream;
+        border: 1px solid rgba(58, 47, 40, 0.1);
+        border-radius: variables.$radius-md;
+        box-shadow: 0 18px 38px rgba(58, 47, 40, 0.13);
+    }
+
+    .navbar-nav {
+        position: static;
+        align-items: stretch;
+        gap: 6px;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 11px 12px;
+        border-radius: variables.$radius-sm;
+        color: variables.$color-brand;
+        text-align: left;
+
+        &:hover,
+        &:focus-visible,
+        &.active {
+            background-color: rgba(166, 124, 82, 0.12);
+        }
+
+        &::after {
+            left: 12px;
+            right: auto;
+            bottom: 6px;
+            width: 30px;
+            transform-origin: left;
+        }
+    }
 }

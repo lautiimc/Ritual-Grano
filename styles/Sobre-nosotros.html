@@ -4,12 +4,14 @@
     <!-- Configuracion basica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta> name="description" content="Ritual & Grano: El arte de la pausa en el centro de la ciudad. Descubre nuestra experiencia única de café de especialidad, donde cada taza es un ritual que despierta tus sentidos. Ubicados en Rosario, te invitamos a conectar con lo esencial a través de nuestro café cuidadosamente seleccionado y preparado. Bienvenido a tu nuevo refugio urbano.">
-    <meta> name="keywords" content="ritual del café, pausa urbana, café cuidadosamente seleccionado, refugio urbano, cultura del café">
+    <meta name="description" content="Ritual & Grano: El arte de la pausa en el centro de la ciudad. Descubre nuestra experiencia única de café de especialidad, donde cada taza es un ritual que despierta tus sentidos. Ubicados en Rosario, te invitamos a conectar con lo esencial a través de nuestro café cuidadosamente seleccionado y preparado. Bienvenido a tu nuevo refugio urbano.">
+    <meta name="keywords" content="ritual del café, pausa urbana, café cuidadosamente seleccionado, refugio urbano, cultura del café">
     <title>Ritual & Grano - Sobre Nosotros</title>
 
      <!-- Bootstrap y estilos propios compilados desde SCSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
      <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -51,20 +53,20 @@
        <!-- Introduccion de la historia de la marca -->
        <section>
         <article class="introduccion-historia">
-            <p>DONDE EL TIEMPO SE DETIENE</p>
-            <h3>Nacimos de una idea simple: devolverle la magia a esos pequeños momentos cotidianos. Vivimos en un mundo que no se detiene, pero nosotros decidimos crear un espacio para hacer una pausa y disfrutar el presente.</h3>
+            <p class="animate__animated animate__fadeInUp">DONDE EL TIEMPO SE DETIENE</p>
+            <h3 class="animate__animated animate__fadeInUp animacion-delay-150 animacion-lenta">Nacimos de una idea simple: devolverle la magia a esos pequeños momentos cotidianos. Vivimos en un mundo que no se detiene, pero nosotros decidimos crear un espacio para hacer una pausa y disfrutar el presente.</h3>
         </article>
        </section>
 
        <!-- Conceptos principales: ritual y grano -->
        <section class="conceptos-principales">
-        <article class="ritual-grano">
+        <article class="ritual-grano" data-aos="fade-right">
             <img src="../imagenes/taza-cafe-humeando.png" alt="Taza de café humeando" width="390" height="auto">
             <h3>El Ritual</h3>
             <p>Es la primera taza humeante por la mañana, el aroma a pan recién horneado, la charla con un amigo o ese momento de tranquilidad a mitad de la tarde. No se trata de solo consumir, sino de experimentar y conectar.</p>
         </article>
 
-        <article class="ritual-grano">
+        <article class="ritual-grano" data-aos="fade-left" data-aos-delay="120">
             <img src="../imagenes/grano-de-cafe.jpg" alt="Granos de café" width="450" height="auto">
             <h3>El Grano</h3>
             <p>Representa nuestra búsqueda incansable de calidad, valorando el origen, el trabajo en la tierra y el proceso artesanal que transforma lo simple en algo extraordinario.</p>
@@ -73,21 +75,21 @@
        
        <!-- Valores que representan a la cafeteria -->
        <section class="valores-cafeteria">
-        <h2>Lo que nos mueve</h2>
+        <h2 data-aos="fade-up">Lo que nos mueve</h2>
         <div class="linea-separadora">
-        <article class="logo-estrella">
+        <article class="logo-estrella" data-aos="zoom-in">
           <h5>✦</h5>
           <h3>Calidad sin concesiones</h3>
           <p>Seleccionamos cada ingrediente para ofrecerte siempre lo mejor.</p>  
         </article>
 
-        <article class="logo-estrella">
+        <article class="logo-estrella" data-aos="zoom-in" data-aos-delay="120">
           <h5>✦</h5>
           <h3>Respeto por el origen</h3>
           <p>Honramos el trabajo de los productores que cultivan nuestra materia prima.</p>
         </article>
 
-        <article class="logo-estrella">
+        <article class="logo-estrella" data-aos="zoom-in" data-aos-delay="240">
           <h5>✦</h5>
           <h3>Comunidad</h3>
           <p>Queremos ser tu punto de encuentro, donde siempre te sientas bienvenido.</p>
@@ -97,9 +99,9 @@
        </section>
 
        <!-- Imagen de cierre de la pagina -->
-       <section class="imagen-cierre">
+       <section class="imagen-cierre" data-aos="fade">
         <img src="../imagenes/Cafeteria-fondo-panoramica.jpg" alt="Cafetería fondo panorámica" width="1000" height="auto">
-        <p>Una experiencia pensada para detenerse.</p>
+        <p><span data-aos="fade-up" data-aos-delay="150">Una experiencia pensada para detenerse.</span></p>
        </section>
 
     </main>
@@ -118,6 +120,17 @@
     </footer>
 
     <!-- Script de Bootstrap para el menu responsive -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        if (window.AOS) {
+            AOS.init({
+                duration: 750,
+                easing: "ease-out-cubic",
+                once: true,
+                offset: 90
+            });
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

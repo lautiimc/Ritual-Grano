@@ -10,6 +10,8 @@
 
      <!-- Bootstrap y estilos propios compilados desde SCSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
      <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -53,40 +55,40 @@
                 <img src="../imagenes/Cafeteria-fondo-panoramica.jpg" class="cafe-refugio-img" alt="Cafetería fondo panorámica" width="1000" height="auto">
             </article>
             <article class="cafe-refugio-txt">
-                <h1>Más que café, un refugio</h1>
-                <p>Descubrí qué se siente pausar el tiempo.</p>
+                <h1 class="animate__animated animate__fadeInUp animacion-lenta">Más que café, un refugio</h1>
+                <p class="animate__animated animate__fadeInUp animacion-delay-150">Descubrí qué se siente pausar el tiempo.</p>
             </article>
        </section>
 
        <!-- Cards con variedades de cafe -->
        <section class="en-taza">
-        <h2 class="en-taza-titulo">En la taza</h2>
+        <h2 class="en-taza-titulo" data-aos="fade-up">En la taza</h2>
         <div class="tarjetas-art">
-            <article class="tarjeta-cafe">
+            <article class="tarjeta-cafe" data-aos="fade-up">
                 <img src="../imagenes/moca.jpg" class="tarjeta-cafe-img" alt="Moca" width="300" height="auto">
                 <h3>Moca</h3>
                 <p>Cacao artesanal y espresso intenso fusionados bajo una microespuma sedosa.</p>
             </article>
 
-            <article class="tarjeta-cafe">
+            <article class="tarjeta-cafe" data-aos="fade-up" data-aos-delay="100">
                 <img src="../imagenes/filtrado-cafe.png" class="tarjeta-cafe-img" alt="Café filtrado" width="300" height="auto">
                 <h3>Café filtrado</h3>
                 <p>Observa el ritual del vertido manual mientras se liberan notas florales y frutales.</p>
             </article>
 
-            <article class="tarjeta-cafe">
+            <article class="tarjeta-cafe" data-aos="fade-up" data-aos-delay="200">
                 <img src="../imagenes/Flat-white.jpg" class="tarjeta-cafe-img" alt="cafe flat white" width="300" height="auto">
                 <h3>Flat White</h3>
                 <p>Doble ristretto abrazando la leche texturizada a la temperatura perfecta.</p>
             </article>
 
-            <article class="tarjeta-cafe">
+            <article class="tarjeta-cafe" data-aos="fade-up" data-aos-delay="300">
                 <img src="../imagenes/capuchino.png" class="tarjeta-cafe-img" alt="capuchino" width="300" height="auto">
                 <h3>Cappuccino</h3>
                 <p>Microespuma densa y aterciopelada corona un espresso intenso, creando la perfecta armonía de sabores.</p>
             </article>
 
-            <article class="tarjeta-cafe">
+            <article class="tarjeta-cafe" data-aos="fade-up" data-aos-delay="350">
                 <img src="../imagenes/latte.png" class="tarjeta-cafe-img" alt="cafe latte" width="300" height="auto">
                 <h3>Latte</h3>
                 <p>La elegancia del café premium combinada con una compleja obra maestra visual sobre la espuma.</p>
@@ -96,19 +98,19 @@
 
        <!-- Seccion sobre la atmosfera del local -->
        <section class="la-atmosfera">
-                <div class="atmo-txt-general">
+                <div class="atmo-txt-general" data-aos="fade-right">
                     <p>LA ATMÓSFERA</p>
                     <h2>Diseñado para quedarte</h2>
                     <p class="atmo-txt-general-txt">Luz cálida, jazz suave de fondo y el aroma a granos recién molidos que te envuelve al entrar.</p>
                     <p class="atmo-txt-general-txt">La experiencia de Ritual & Grano no termina en la taza. También vive en la madera clara, el silencio amable entre las mesas y el ritmo sereno del servicio.</p>
                 </div>
 
-                <img src="../imagenes/Imagen-cafeteria-general.avif" class="atmo-img-general" alt="imagen de cafeteria" width="600">
+                <img src="../imagenes/Imagen-cafeteria-general.avif" class="atmo-img-general" alt="imagen de cafeteria" width="600" data-aos="fade-left" data-aos-delay="120">
             
                 
-                <img src="../imagenes/cafe-molienda-vertical.jpg" class="atmo-img-molienda" alt="cafe en molienda" width="300">
+                <img src="../imagenes/cafe-molienda-vertical.jpg" class="atmo-img-molienda" alt="cafe en molienda" width="300" data-aos="zoom-in">
             
-                <div class="atmo-interior-txt">
+                <div class="atmo-interior-txt" data-aos="fade-left" data-aos-delay="160">
                     <h3>Un interior que acompaña el ritual</h3>
                     <p>Plantas, lino, cerámica y una luz natural controlada crean una sensación de refugio urbano pensada para quedarse un poco más.</p>
                 </div>
@@ -117,27 +119,27 @@
 
        <!-- Comentarios de clientes -->
        <section class="tu-voz">
-            <h2>Tu voz en nuestro espacio</h2>
+            <h2 data-aos="fade-up">Tu voz en nuestro espacio</h2>
             <div class="comentarios">
-                <article class="comentarios-txt">
+                <article class="comentarios-txt" data-aos="fade-up">
                     <p>✦ ✦ ✦ ✦ ✦</p>
                     <p>"El único lugar donde realmente puedo desconectar y disfrutar un café de verdad."</p>
                     <p class="nombre-comentario">Sofía L.</p>
                 </article>
 
-                <article class="comentarios-txt">
+                <article class="comentarios-txt" data-aos="fade-up" data-aos-delay="100">
                     <p>✦ ✦ ✦ ✦ ✦</p>
                     <p>"La mezcla perfecta entre calidez, diseño y precisión en cada preparación"</p>
                     <p class="nombre-comentario">Mateo R.</p>
                 </article>
 
-                <article class="comentarios-txt">
+                <article class="comentarios-txt" data-aos="fade-up" data-aos-delay="200">
                     <p>✦ ✦ ✦ ✦ ✦</p>
                     <p>"Venís por el café y terminás quedándote por la atmósfera. Tiene algo especial."</p>
                     <p class="nombre-comentario">Julia A.</p>
                 </article>
 
-                <article class="comentarios-txt">
+                <article class="comentarios-txt" data-aos="fade-up" data-aos-delay="300">
                     <p>✦ ✦ ✦ ✦ ✦</p>
                     <p>"​Se nota el amor y la precisión que le ponen a cada filtrado."</p>
                     <p class="nombre-comentario">Valentina P.</p>
@@ -160,6 +162,17 @@
     </footer>
 
     <!-- Script de Bootstrap para el menu responsive -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        if (window.AOS) {
+            AOS.init({
+                duration: 750,
+                easing: "ease-out-cubic",
+                once: true,
+                offset: 90
+            });
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
