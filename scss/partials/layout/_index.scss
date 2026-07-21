@@ -82,6 +82,7 @@
 // Contenedor de las tres imagenes enlazadas.
 .tres-caminos-art {
     @include mixin.flex(row, center, center);
+    flex-wrap: wrap;
     gap: 20px;
     width: 100%;
     padding: 20px;

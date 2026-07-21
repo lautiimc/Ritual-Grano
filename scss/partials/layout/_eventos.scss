@@ -1,0 +1,167 @@
+@use "../utilities/extend";
+@use "../utilities/mixin";
+@use "../utilities/variables";
+
+// Hero de la pagina Eventos.
+.eventos-refugio {
+    position: relative;
+    overflow: hidden;
+}
+
+// Imagen principal de la pagina Eventos.
+.eventos-refugio-img {
+    width: 100%;
+    height: auto;
+}
+
+// Texto centrado sobre el hero de eventos.
+.eventos-refugio-txt {
+    @include mixin.absolute-center;
+    @extend %overlay-text;
+    color: variables.$color-bg;
+    width: 80%;
+
+    h1 {
+        font-family: variables.$font-title;
+        font-size: clamp(2rem, 7vw, 5rem);
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: variables.$font-body;
+        font-size: clamp(0.8rem, 2vw, 1.350rem);
+        font-style: italic;
+    }
+}
+
+// Seccion con la agenda semanal.
+.agenda-eventos {
+    @include mixin.flex(column, center, center);
+    gap: 28px;
+    background-color: variables.$color-bg;
+    @include mixin.section-padding();
+
+    h2 {
+        font-family: variables.$font-title;
+        font-size: clamp(2rem, 5vw, 4rem);
+        color: variables.$color-text;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+// Etiqueta pequena de la agenda.
+.agenda-eventos-ref {
+    @extend %eyebrow-text;
+    font-family: variables.$font-title;
+    color: variables.$color-accent;
+}
+
+// Contenedor de las tarjetas de eventos.
+.tarjetas-eventos {
+    @include mixin.auto-grid(280px, 360px, 24px, center);
+}
+
+// Card de cada actividad semanal.
+.evento-card {
+    @extend %card-base;
+    @include mixin.flex(column, flex-start, stretch);
+    background-color: variables.$color-card;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+
+    h3 {
+        font-family: variables.$font-title;
+        font-size: clamp(1.4rem, 3vw, 1.8rem);
+        color: variables.$color-text;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-family: variables.$font-body;
+        font-size: 1rem;
+        color: variables.$color-muted;
+        margin-bottom: 0;
+    }
+}
+
+// Imagen de cada actividad.
+.evento-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+// Texto interno de las tarjetas.
+.evento-card-txt {
+    @include mixin.flex(column, flex-start, flex-start);
+    gap: 14px;
+    padding: 24px;
+}
+
+// Dia destacado en cada actividad.
+.evento-dia {
+    font-family: variables.$font-title !important;
+    font-weight: bold;
+    color: variables.$color-accent !important;
+}
+
+// Horario destacado de cada evento.
+.evento-horario {
+    font-family: variables.$font-title !important;
+    color: variables.$color-brand !important;
+    font-weight: bold;
+    border-top: 1px solid variables.$color-border-soft;
+    padding-top: 14px;
+    width: 100%;
+}
+
+// Cierre con invitacion a reservar.
+.eventos-cierre {
+    @include mixin.flex(column, center, center);
+    gap: 24px;
+    background-color: variables.$color-accent;
+    padding: 70px 20px;
+    margin-bottom: 80px;
+    text-align: center;
+
+    p {
+        font-family: variables.$font-title;
+        font-size: clamp(1.4rem, 4vw, 3rem);
+        color: variables.$color-white;
+        max-width: 700px;
+        margin: 0;
+    }
+
+    .boton-eventos {
+        @extend %button-base;
+        background-color: variables.$color-brand;
+        margin-bottom: 0;
+
+        &:hover,
+        &:focus-visible {
+            background-color: #2b211c;
+        }
+    }
+}
+
+// Responsive de la pagina Eventos.
+@include mixin.mobile {
+    .eventos-refugio-txt {
+        width: 90%;
+    }
+
+    .agenda-eventos {
+        padding: 40px 20px;
+    }
+
+    .evento-img {
+        height: 220px;
+    }
+
+    .eventos-cierre {
+        margin-bottom: 20px;
+        padding: 50px 20px;
+    }
+}

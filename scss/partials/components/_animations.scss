@@ -91,7 +91,8 @@ header .navbar {
 
 // Botones principales con elevacion sutil.
 .boton-exp,
-.boton-contacto {
+.boton-contacto,
+.boton-eventos {
     border: 0;
     cursor: pointer;
     transition: background-color $animacion-base $curva-suave, box-shadow $animacion-base $curva-suave, transform $animacion-base $curva-suave;
@@ -137,7 +138,8 @@ header .navbar {
 .img-cultura-grano,
 .atmo-img-general,
 .atmo-img-molienda,
-.imagen-contacto {
+.imagen-contacto,
+.evento-img {
     transition: filter $animacion-base $curva-suave, transform $animacion-lenta $curva-suave;
 }
 
@@ -151,7 +153,8 @@ header .navbar {
 .tags-contacto .direccion,
 .tags-contacto .horarios,
 .tags-contacto .contactanos,
-.formulario {
+.formulario,
+.evento-card {
     transition: box-shadow $animacion-base $curva-suave, transform $animacion-base $curva-suave, background-color $animacion-base $curva-suave;
 }
 
@@ -163,7 +166,12 @@ header .navbar {
     overflow: hidden;
 }
 
-.cafe-refugio-img {
+.eventos-refugio {
+    overflow: hidden;
+}
+
+.cafe-refugio-img,
+.eventos-refugio-img {
     animation: imagen-hero-entrada 1200ms $curva-suave both;
     transform-origin: center;
 }
@@ -212,12 +220,14 @@ header .navbar {
     .logo-estrella:hover,
     .tags-contacto .direccion:hover,
     .tags-contacto .horarios:hover,
-    .tags-contacto .contactanos:hover {
+    .tags-contacto .contactanos:hover,
+    .evento-card:hover {
         box-shadow: 0 18px 38px rgba(58, 47, 40, 0.1);
         transform: translateY(-3px);
     }
 
-    .tarjeta-cafe:hover .tarjeta-cafe-img {
+    .tarjeta-cafe:hover .tarjeta-cafe-img,
+    .evento-card:hover .evento-img {
         filter: saturate(1.04) contrast(1.02);
         transform: scale(1.025);
     }
@@ -226,7 +236,8 @@ header .navbar {
     .img-cultura-grano:hover,
     .atmo-img-general:hover,
     .atmo-img-molienda:hover,
-    .imagen-contacto:hover {
+    .imagen-contacto:hover,
+    .evento-img:hover {
         filter: saturate(1.03);
         transform: scale(1.012);
     }

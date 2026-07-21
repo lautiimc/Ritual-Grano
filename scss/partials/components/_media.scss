@@ -10,6 +10,8 @@
 // Imagenes de los accesos a paginas internas.
 .tres-caminos-img {
     @include mixin.fluid-image(400px);
+    height: 533px;
+    object-fit: cover;
 }
 
 // Imagen de la seccion "Cultura grano".

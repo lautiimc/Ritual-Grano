@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuracion basica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ritual & Grano: Eventos semanales para compartir una pausa distinta. Meriendas con pintura de cerámica, shows de música en vivo y tardes de juegos de mesa en Rosario.">
+    <meta name="keywords" content="eventos, ritual y grano, cafe en Rosario, musica en vivo, ceramica, juegos de mesa">
+    <title>Ritual & Grano - Eventos</title>
+
+     <!-- Bootstrap y estilos propios compilados desde SCSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+     <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Encabezado y navegacion principal -->
+    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+             <a class="navbar-brand titulo" href="../index.html">Ritual & Grano</a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="La-experiencia.html">La Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Sobre-nosotros.html">Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                </li>
+            </ul>
+        </div>
+  </div>
+    </nav>
+    </header>
+
+    <main>
+        <!-- Hero de la pagina Eventos -->
+        <section class="eventos-refugio">
+            <article>
+                <img src="../imagenes/Cafeteria-fondo-panoramica.jpg" class="eventos-refugio-img" alt="Cafetería fondo panorámica" width="1000" height="auto">
+            </article>
+            <article class="eventos-refugio-txt">
+                <h1 class="animate__animated animate__fadeInUp animacion-lenta">Eventos</h1>
+                <p class="animate__animated animate__fadeInUp animacion-delay-150">Momentos para compartir, crear y quedarse un rato más.</p>
+            </article>
+       </section>
+
+       <!-- Agenda semanal de actividades -->
+       <section class="agenda-eventos">
+            <p class="agenda-eventos-ref" data-aos="fade-up">AGENDA SEMANAL</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">La semana en nuestra casa</h2>
+            <div class="tarjetas-eventos">
+                <article class="evento-card" data-aos="fade-up">
+                    <img src="../imagenes/merienda-ceramica.jpg" class="evento-img" alt="Taza de cerámica pintada" width="400" height="auto">
+                    <div class="evento-card-txt">
+                        <p class="evento-dia">Martes y jueves</p>
+                        <h3>Merienda con cerámica</h3>
+                        <p>Pintá tu pieza, compartí algo rico y dejá que la tarde encuentre su propio ritmo.</p>
+                        <p class="evento-horario">17:00 - 20:00 hs</p>
+                    </div>
+                </article>
+
+                <article class="evento-card" data-aos="fade-up" data-aos-delay="120">
+                    <img src="../imagenes/musica-en-vivo.jpg" class="evento-img" alt="Piano en un espacio cálido de café" width="400" height="auto">
+                    <div class="evento-card-txt">
+                        <p class="evento-dia">Viernes y sábados</p>
+                        <h3>Música en vivo</h3>
+                        <p>Artistas en vivo para acompañar la noche con canciones, café y una luz más tranquila.</p>
+                        <p class="evento-horario">19:00 - 21:00 hs</p>
+                    </div>
+                </article>
+
+                <article class="evento-card" data-aos="fade-up" data-aos-delay="240">
+                    <img src="../imagenes/tarde-juegos.jpg" class="evento-img" alt="Juego de mesa sobre una mesa" width="400" height="auto">
+                    <div class="evento-card-txt">
+                        <p class="evento-dia">Domingos</p>
+                        <h3>Tarde de juegos</h3>
+                        <p>Juegos de mesa para disfrutar en familia y cerrar la semana sin apuro.</p>
+                        <p class="evento-horario">14:00 - 18:00 hs</p>
+                    </div>
+                </article>
+            </div>
+       </section>
+
+       <!-- Cierre con invitacion a reservar -->
+       <section class="eventos-cierre" data-aos="zoom-in">
+            <p>Reservá tu lugar y vení a disfrutar la pausa.</p>
+            <button class="boton-eventos"><a class="exp-link" href="Contacto.html">Escribirnos</a></button>
+       </section>
+    </main>
+
+
+    <!-- Pie de pagina compartido -->
+    <footer>
+        <section class="final-de-pagina">
+       <h3><a href="../index.html" class="titulo-final"><strong>RITUAL & GRANO</strong></a></h3>
+        <article class="direccion-final">
+       <P>Rosario, Santa Fe</P>
+       <p>El arte de la pausa en el centro de la ciudad.</p>
+       </article>
+        <p class="derechos reservados"> ©2026 Ritual & Grano - todos los derechos reservados.</p>
+       </section>
+    </footer>
+
+    <!-- Script de Bootstrap para el menu responsive -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        if (window.AOS) {
+            AOS.init({
+                duration: 750,
+                easing: "ease-out-cubic",
+                once: true,
+                offset: 90
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
